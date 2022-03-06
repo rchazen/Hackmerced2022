@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="This is a website for hack merced's hackathon"> 
+		<meta name="author" content = "Ryan Chazen">
+		<meta name="keywords" content="Hackathon, Hack Merced, HTML Project, Ryan Chazen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hackathon Group</title>
+		<style type="text/css">
+			
+			.title{
+			
+			color:darkred;
+		
+			text-align: center;
+			/*display: inline-block;*/
+			
+
+			}
+
+			body{
+				font-family: Ariel, Helvetica, sans-serif
+							}
+
+			.hackmercedphoto{
+
+				/*direction: rtl;*/
+				display: inline-block;
+				position: absolute;
+				top: 0px;
+				right:0px;
+				/*text-align: right;*/
+				display-bottom: 30px;
+				
+			}
+			ul{
+				list-style-type: none;
+				margin:0;
+				padding: 0;
+				width: 25%;
+
+				background-color: lightgray;
+				border: 1px solid darkgray;
+				
+			}
+			li a{
+				display: block;
+				color:black;
+				padding:8px 16px;
+				text-decoration: none;
+				border: 1px solid darkgray;
+				text-align: center;
+
+			}
+			li a:hover{
+				background-color: darkgray;
+				color:white;
+
+			}
+			.active{
+				background-color: darkred;
+				color:white;
+			}
+			.about_me_photo{
+				
+				display: inline-block;
+				float: left;
+				border: 2px solid darkred;
+		
+
+			}
+			.about_me_text{
+				display: inline-block;
+				padding-left: 20px;
+				float:left;
+				width: calc(100% - 200px - 25%);
+
+			}
+
+		</style>
+	</head>
+	<body style="background-color: #f4f4f4;">
+		<header>
+
+
+			<div class="title">
+			<h1> Hackathon Project  </h1>  <!-- Update this name -->
+			</div>
+
+			<div class="hackmercedphoto">
+				<a href="https://hackmerced.com/#/" target="_blank">
+				<img width="100" height="100" src="images/hackmerced.jpg" alt ="A picture of hackmerced" />
+			</a>
+			</div>
+
+			<!-- this is where we put the nav stuff-->
+			<nav>
+				<ul>
+					<div>
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="aboutUs.html" class="active">About Us</a></li>
+					<li><a href="codeCompiler.html">Code Compiler</a></li>
+
+				</ul>
+			</nav>
+		</header>
+
+
+		<main>
+
+			
+
+			
+			<br/>
+			<hr/>
+			<div class="about_me_photo">
+				<img width="200" src="images/ryan_chazen.jpg" alt = "A photo of Ryan Chazen!">
+			</div>
+			<div class="about_me_text">
+				<p>Hello! My name is <b>Ryan Chazen</b>. I am a third year Computer Science & Engineering student graduating from UC Merced in May 2023. My interest is web development. Here is my <a href="https://www.linkedin.com/in/ryan-chazen-447bb2194/" target="_blank">LinkedIn</a>. Feel free to reach out there or through my email: rchazen@ucmerced.edu</p> 
+			</div>
+
+		</main>
+
+
+
+		<footer>
+			
+
+
+		</footer>
+
+	</body>
+</html>

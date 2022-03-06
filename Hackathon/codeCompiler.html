@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="This is a website for hack merced's hackathon"> 
+		<meta name="author" content = "Ryan Chazen">
+		<meta name="keywords" content="Hackathon, Hack Merced, HTML Project, Ryan Chazen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hackathon Group</title>
+		<style id="styling">
+		</style>
+		<style type="text/css">
+			
+			.title{
+			
+			color:darkred;
+		
+			text-align: center;
+			/*display: inline-block;*/
+			
+
+			}
+
+			body{
+				font-family: Ariel, Helvetica, sans-serif
+							}
+
+			.hackmercedphoto{
+
+				/*direction: rtl;*/
+				display: inline-block;
+				position: absolute;
+				top: 0px;
+				right:0px;
+				/*text-align: right;*/
+				display-bottom: 30px;
+				
+			}
+			ul{
+				list-style-type: none;
+				margin:0;
+				padding: 0;
+				width: 25%;
+
+				background-color: lightgray;
+				border: 1px solid darkgray;
+				
+			}
+			li a{
+				display: block;
+				color:black;
+				padding:8px 16px;
+				text-decoration: none;
+				border: 1px solid darkgray;
+				text-align: center;
+
+			}
+			li a:hover{
+				background-color: darkgray;
+				color:white;
+
+			}
+			.active{
+				background-color: darkred;
+				color:white;
+			}
+			.immobile{
+				resize:none;
+				height: 300px;
+				width: calc(50% - 10px);
+			}
+			.left_center{
+				display: inline-block;
+				color: darkred;
+				width: calc(50% - 20px);
+				text-align: center;
+				/*float:left;*/
+				/*padding-left: 20px;*/
+			}
+			.right_center{
+				display: inline-block;
+				color: darkred;
+				width: calc(50% - 20px);
+				text-align: center;
+
+
+				/*float:right;*/
+				/*padding-left: 10px;*/
+			}
+		</style>
+	</head>
+	<body style="background-color: #f4f4f4;">
+		<script>
+			function compileHTML(field, e){
+
+				document.getElementById('output').innerHTML = field.value;
+			}
+			function compileCSS(field, e){
+
+				document.getElementById('styling').innerHTML = field.value;
+			}
+		</script>
+		<header>
+
+
+			<div class="title">
+			<h1> Hackathon Project  </h1>  <!-- Update this name -->
+			</div>
+
+			<div class="hackmercedphoto">
+				<a href="https://hackmerced.com/#/" target="_blank">
+				<img width="100" height="100" src="images/hackmerced.jpg" alt ="A picture of hackmerced" />
+			</a>
+			</div>
+
+			<!-- this is where we put the nav stuff-->
+			<nav>
+				<ul>
+					<div>
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="aboutUs.html" >About Us</a></li>
+					<li><a href="codeCompiler.html" class="active">Code Compiler</a></li>
+
+				</ul>
+			</nav>
+		</header>
+
+
+		<main>
+
+			
+
+			
+			<br/>
+			<hr/>
+			
+			<div style="clear: both">
+				<h4 class = "left_center">Try inputing HTML code below!</h4>
+				<h4 class = "right_center">Try inputing CSS code below!</h4>
+			</div>
+
+				<textarea class= "immobile" placeholder="Try typing some HTML!" onkeyup="compileHTML(this)"></textarea>
+				<textarea class= "immobile" placeholder="Try typing some CSS!" onkeyup="compileCSS(this)"></textarea>
+
+			
+				<div id="output"></div>
+
+		</main>
+
+
+
+		<footer>
+			
+
+
+		</footer>
+
+	</body>
+</html>
