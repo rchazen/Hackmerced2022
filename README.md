@@ -14,10 +14,10 @@ Reference: (picture) https://www.graphicdesigndegreehub.com/faq/if-i-do-not-like
 
  
 ### Available Features
-- [ ] Users can develop HTML or CSS code in the code editor.
-- [ ] Users can choose to run the HTML or CSS code.
-- [ ] Users can know more about us in "About Us" page.
-- [ ] Users can go back to Home page by clicking "Home".
+- [X] Users can develop HTML or CSS code in the code editor.
+- [X] Users can choose to run the HTML or CSS code.
+- [X] Users can know more about us in "About Us" page.
+- [X] Users can go back to Home page by clicking "Home".
 
 ### Future Upcoming Features
 - [ ] Allow more choices of programming languages to be compiler and run.
